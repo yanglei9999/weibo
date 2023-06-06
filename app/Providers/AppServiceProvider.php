@@ -19,6 +19,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        //分页使用bootstrap
+        \Illuminate\Pagination\Paginator::useBootstrap();
+
     }
 }
